@@ -1,0 +1,7 @@
+$img_size: 220px;
+$black: rgba(0,0,0, .6);
+
+@mixin general_img_size{
+  width: $img_size;
+  height: $img_size;
+}
