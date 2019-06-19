@@ -1,7 +1,5 @@
 <?php
-  include 'data.php';
-
-
+  include 'data_increasing_order.php';
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +12,18 @@
     <title>Dischi</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="search-bar">
+        <input type="text" name="search-bar" class = 'search-artist' placeholder="Ricerca artista">
+      </div>
+    </header>
+    <div class="select">
+      <select class="order" name="ordering">
+        <option value="normal">Ordina per:</option>
+        <option value="increasing">Ordine crescente</option>
+        <option value="decreasing">Ordine decrescente</option>
+      </select>
+    </div>
     <div class="container">
       <div class="albums">
       </div>
@@ -24,9 +33,9 @@
       <div class='album' value = "{{title}}">
         <img src ='{{img}}'>
         <div class = 'info'>
-          <div>{{title}}</div>
-          <div>{{artist}}</div>
-          <div>{{release_date}}</div>
+          <div class = 'title' data-value = "{{title}}">{{title}}</div>
+          <div class = 'artist' data-value = "{{artist}}">{{artist}}</div>
+          <div class = 'release_date' data-value = "{{release_date}}">{{release_date}}</div>
         </div>
       </div>
     </script>

@@ -44,3 +44,15 @@ body{
 img{
   @include general_img_size;
 }
+
+.select{
+  position: relative;
+  height: 60px;
+  z-index: 1;
+}
+
+.order{
+  position: absolute;
+  right: 24%;
+  top: 40%;
+}
