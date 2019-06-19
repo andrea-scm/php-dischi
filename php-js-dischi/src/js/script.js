@@ -16,7 +16,6 @@ $(document).ready(function () {
       if (((keyCode > 64 && keyCode < 123) || keyCode == 8 )  && searchInput != '') {
         $('.artist').each(function () {
           var artistName = $(this).attr('data-value').toLowerCase();
-          //console.log(artistName.indexOf(searchInput));
           //console.log(artistName);
           //se l' artistName corrente include il carattere/i caratteri correnti dell'input
           //allora mostro l'artistName che includono quei caratteri altrimenti nascondo
